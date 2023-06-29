@@ -1,0 +1,41 @@
+.sellingcars{
+    display: flex;
+    margin: 30px;
+    box-shadow: 2px 2px 25px 2px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.carimage img{
+    background-position: cover;
+    width: 40rem;
+    height: 20rem;
+    border-radius: 20px;
+}
+.texts {
+    margin: 20px;
+}
+.texts h1{
+    font-weight: 300;
+    font-size: 30px;
+}
+.texts h3{
+    font-weight: 200;
+    font-size: 20px;
+}
+.sellingcars .texts button{
+    margin: 5rem;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:600px){
+    .sellingcars{
+        display: flex;
+        flex-direction: column;
+    }
+    .carimage img{
+        width: 25rem;
+        background-image: cover;
+    }
+}
