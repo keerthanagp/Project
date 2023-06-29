@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,500&family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+    position: relative;
+}
+body .header .image img{
+    background-position: cover;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.3; 
+    padding: 0.5rem;
+}
+nav{
+    position: absolute;
+    top:0; left: 3rem;  
+    display: flex;
+    align-items: center;
+    }
+nav .logo img{
+    width: 15rem;
+    height: 5rem;
+}
+nav .logo .icons button{
+   position: relative;
+    left: 75rem; bottom: 2rem;
+    margin: 0.5rem;
+    border:1px solid #fff;
+    padding: 7px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+}
+nav .logo .icons .lang{
+    background-color: transparent;
+    align-items: center;
+}
+nav .logo .icons .sign{
+    padding: 7px 20px;
+}
+nav .logo .icons .lang .material-symbols-outlined{
+    justify-content: left;
+    font-size: 15px;
+}
+.header-content{
+    position: absolute;
+    top: 15rem; left: 25rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+}
+.header-content h1{
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+}
+.header-content h3{
+    text-align: center;
+    line-height: 1.5;
+}
+.header-content p{
+    line-height: 3;
+    margin-top: 5px;
+}
+.singup{
+    margin-top: 30px;
+    align-items: center;
+    border-radius: 4px;
+    padding:15px 30px;
+    display: flex;
+}
+.singup input{
+    flex: 1;
+    margin-left: 20px;
+    padding: 15px;
+}
+.singup button{
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+}
+.main-tab{
+    font-size: 22px;
+    margin: 1.5rem;
+    padding: 10rem;
+    align-items: center;
+    
+}
+.main-tab .features{
+    display: flex;
+    padding: 2px;
+    padding: 50px 0;
+}
+.main-tab .features .text{
+    text-align: center;  
+        
+}
+.main-tab .mainImg img{
+   width: 30rem;
+}
+
+.main-2ndTab{
+    display: flex;
+    position: relative;
+    bottom: 5rem;
+    padding: 60px; 
+    align-items: center;
+}
+.main-2ndTab .girlimage img{
+    width: 30rem;
+}
+.main-2ndTab .textsecond{
+    padding: 90px;  
+}
+.main-2ndTab .textsecond h1{
+    margin-right: 20px; 
+    font-size: 3rem;
+    font-weight: 500;
+}
+.main-2ndTab .textsecond h3{
+    font-size:  1.5rem;
+}
+.main-3rdTab{
+    display: flex;
+}
+.main-3rdTab .text{
+    margin: 40px;
+    padding: 60px; 
+}
+.main-3rdTab .text h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.main-3rdTab .text h3{
+    font-size:  1.5rem;
+    font-weight: 500;
+}
+.main-3rdTab .vedioImage img{
+    width: 50rem;
+    padding-right: 10rem;
+}
+.main-4thTab{
+    display: flex;
+    align-items: center;
+    padding: 20px
+}
+.main-4thTab .childimg img{
+    width: 35rem;
+    padding-left: 10rem;
+}
+.main-4thTab .childtext{
+    margin: 40px;
+    padding: 60px; 
+}
+.main-4thTab .childtext h1{
+    font-size: 50px;
+    font-weight: 500; 
+}
+.main-4thTab .childtext h3{
+    font-size:  1.5rem;
+    font-weight: 500;
+    margin-right: 100px;
+}
+.questionTab{
+    padding: 10px 12%;
+    font-size: 18px;
+    text-align: center;
+}
+.questionTab h1{
+    font-size: 50px;
+    font-weight:500;
+}
+.questionTab .questions{
+    margin: 60px auto;
+    width: 100%;
+}
+.questionTab .questions li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.questionTab .questions li label{
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #303030;
+    cursor: pointer;
+    position: relative;
+    width: 40rem;
+    align-items: center;
+   margin-left: 12rem;
+}
+label::after{
+content: "+";
+font-size: 30px;
+position: absolute;
+right:20px
+}
+input[type="radio"]{
+    display: none;
+}
+.questionTab .questions .content{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    width: 40rem;
+    margin-left: 12rem;
+}
+.questions input[type="radio"]:checked+label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.questionTab .small{
+    font-size: 13px;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    background-color:black;
+    padding: 20px;
+    justify-content: center;
+}
+
+.footerh1{ 
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;  
+    justify-content: center;
+    color: #777;
+    margin-left: 21rem;
+
+}
+.footer .fboxContainer .fbox a{
+    display: block;
+    color: #777;
+    font-size: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 14px;
+    justify-content: center;
+    line-height: 0.5;
+}
+.footer .fboxContainer .fbox a:hover{
+    text-decoration: underline;
+}
+.fbotton{
+     margin-left: 21rem;
+    background-color: transparent;
+
+}
+.fbotton .lang .material-symbols-outlined{
+    font-size: 15px;
+
+}
+.fbotton button{
+    background-color: transparent;
+    color: #777;
+    border:0.5px solid #777;
+    padding: 10px 30px;
+    border-radius: 2px;
+}
+.reserved h6{
+    margin-left: 21rem;
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #777;
+}
